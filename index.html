@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>PROGRAMMER — Mahmoud Farhat</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body><main id="game"><canvas id="canvas"></canvas>
+<header class="top"><div class="brand">✦ عمو نجم</div><div class="stats"><div class="stat">النقاط<b id="score">0</b></div><div class="stat">الدور<b id="level">1</b></div><div class="stat best">الأفضل<b id="best">0</b></div></div></header>
+<div class="meters"><span class="meter-label">الطاقة</span><div class="meter hp"><i id="hpBar"></i></div><span class="meter-label">الدرع</span><div class="meter shield"><i id="shieldBar"></i></div></div>
+<button id="pauseBtn" aria-label="إيقاف مؤقت">Ⅱ</button><div class="bossbar" id="bossBar">زعيـم المنطقة<div><i id="bossFill"></i></div></div><div class="toast" id="toast"></div>
+<div class="controls"><button class="ctrl" id="left" aria-label="تحرك يسارًا">◀</button><button class="ctrl" id="right" aria-label="تحرك يمينًا">▶</button></div>
+<section class="overlay" id="start"><div class="panel"><h1 class="game-title">PROGRAMMER</h1><p class="author">Mahmoud Farhat</p><div class="loadout"><label>اختر سفينتك<select id="shipSelect"></select></label><label>اختر منطقتك<select id="regionSelect"></select></label></div><button class="primary" id="startBtn">ابدأ المهمة</button></div></section>
+<section class="overlay" id="over" style="display:none"><div class="panel"><h2 id="overTitle">انتهت الرحلة!</h2><p>نتيجتك النهائية</p><div class="result" id="final">0</div><div class="newbest" id="newBest" style="display:none">✦ رقم قياسي جديد! ✦</div><div class="actions"><button class="primary" id="retry">العب مرة أخرى</button><button class="secondary" id="menu">القائمة الرئيسية</button></div><div class="hint">المستوى والمهارات المحفوظة تستمر في المحاولة القادمة.</div></div></section>
+<section class="overlay" id="upgrade" style="display:none"><div class="panel"><h2>اختار ترقية</h2><p>وصلت إلى منطقة جديدة. اختر تطويرًا واحدًا لسفينتك:</p><div class="upgrade-grid" id="upgradeGrid"></div></div></section>
+<section class="overlay" id="pause" style="display:none"><div class="panel"><h2>اللعبة متوقفة</h2><p>خذ نفسًا... الخطر مستمر بعد العودة.</p><button class="primary" id="resume">استكمال</button></div></section>
+</main>
+<script src="js/save-system.js"></script>
+<script src="js/content.js"></script>
+<script src="js/game.js"></script></body></html>
